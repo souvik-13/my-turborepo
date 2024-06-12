@@ -1,0 +1,15 @@
+import { cn } from "@ui/lib/utils"
+
+interface {{ pascalCase name }}Props {
+  children?: React.ReactNode;
+  className?: string;
+}
+
+export const {{ pascalCase name }} = ({ children, className }:{{ pascalCase name }}Props ) => {
+  return (
+    <div className={cn(className)}>
+      <h1>{{ pascalCase name }} Component</h1>
+      {children}
+    </div>
+  );
+};
